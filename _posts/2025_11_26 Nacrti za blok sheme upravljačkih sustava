@@ -1,0 +1,20 @@
+Ne postoji neki prihvaćeni standard za simbole i crtanje blok shema upravljačkog sustava u elektranama. Za klasičnu PLC opremu kakvu najčešće koristim, Siemens nudi [bazu svoje opreme](https://www.automation.siemens.com/bilddb/search.aspx?objecttype=35)  u .svg i .jpg formatima.
+
+Najbolji pristup bi bio definirati posebnu bazu simbola upravo za upravljačku topologiju. Koraci za kreiranje jednog bloka su sljdedeći:
+- na Siemensovoj stranici pronađi opremu koju želiš koristiti (PLC, Scalance preklopnik)
+- preuzmi sliku u vektorskom formatu (.svg)
+- postavi sliku u zasebnan layer (AUT_blok_shema_oprema)
+- pomoću Inkscape programa pretvori .svg u .png format, pripazi da ima transparentnu pozadinu
+  - dimenzije za A3 format bi trebale biti širine 30-60 mm, uz gustoću od 300 dpi
+  - za blok širine 30 mm, slika treba imati minimalno 355 px
+  - za blok širine 40 mm, slika treba imati minimalno 472 px
+  - za blok širine 50 mm, slika treba imati minimalno 590 px
+  - za blok širine 60 mm, slika treba imati minimalno 710 px
+- unutar Bricscad-a kreiraj simbol s nazivom opreme (npr. SCALANCE X204)
+- ubaci .png sliku unutar Bricscada
+- postavi base point točku u donji lijevi kut
+- definiraj točke za spajanje komunikacijskih veza sa POINT naredbom; prikaz točaka se može kontrolirati s PDMODE naredbom
+  - pokušaj postići konzistentnu udaljenost između susjednih portova (npr. 5 mm ili 10 mm), što će možda zahtijevati skaliranje slike
+- točke idu u zaseban layer, da bi se mogao kontrolirati njihov prikaz (AUT_blok_shema_connection_points)
+- dodatno, mogu se definirati atributi za prikaz oznake opreme, tipa, ili kataloškog broja
+  - svaki od tih atributa bi trebao ići u zaseban layer (AUT_blok_shema_oznaka, AUT_blok_shema_tip, AUT_blok_shema_kataloški_broj)
