@@ -1,0 +1,53 @@
+Prema normi HRN EN 61082-1 postoje četiri osnovne vrste dokumenata za elektrotehniku:
+- dijagrami (strujne sheme, blok sheme, nacrti koji nisu u mjerilu)
+- nacrti (pregledni nacrti, dispozicije opreme, mjerne skice, nacrti u mjerilima)
+- tablice (liste)
+- grafovi (time sequence chartž
+
+podvrste dijagrama:
+ - overview diagram
+   - singe-line diagram
+   - network map
+   - **topological diagram of a network** (IEC 60050-603)
+   - system diagram
+   - system operational diagram
+   - three phase system diagram
+   - voltage map
+   - block diagram   
+ - function diagram
+   - function chart
+   - equivalent-circuit diagram
+   - logic-function diagram   
+ - circuit diagram
+   - terminal funcion diagram
+ - connection diagram 
+   - terminal connection diagram
+   - unit connection diagram
+   - interconnection diagram
+   - cable diagram
+   - terminal connection table
+   - unit connection list
+   - unit connection table
+   - interconnection list
+   - interconnection table
+   - cable list
+   - cable table
+
+ podvrste nacrta
+ - arrangement drawing
+   - site plan
+   - earthing diagram
+   - installation diagram
+   - cable routing diagram
+   - earthing plan
+   - installation drawing
+   - building drawing
+   - assembly drawing
+   
+
+podvrste tablica
+- connection diagram
+
+podvrste grafova
+ - time sequence chart
+ - sequence chart
