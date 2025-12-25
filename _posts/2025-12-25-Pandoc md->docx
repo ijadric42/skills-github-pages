@@ -1,0 +1,25 @@
+Potpuna automatizacija izrade docx datoteke iz markdown datoteka.
+
+1. definiranje globalnih metapodataka koji vrijede za čitavi projekt:
+- Investitor
+- Naručitelj
+- Naziv projekta
+- Oznaka projekta
+- Građevina
+- Glavni projektant
+i slično
+
+2. definiranje metapodataka koji su primjenjivi na određenu mapu:
+- Naziv mape
+- Oznaka mape
+- Redni broj mape
+- Strukovna odrednica
+- Projektant
+
+3. izrada popisa mapa u .md datoteci
+
+4. izrada makefile datoteke (ili možda filtera?) koja radi sljedeće:
+- umeće metapodatke mape nakon globalnih metapodataka
+- definira sve .md datoteke (metapodaci, poglavlja, popis mapa) koje se koriste za generiranje docx datoteke
+- redoslijed datoteka mora biti fiksan, zajedno s definiranim relativnim putanjama
+
