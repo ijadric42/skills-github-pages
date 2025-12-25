@@ -16,9 +16,16 @@ i slično
 - Strukovna odrednica
 - Projektant
 
-3. izrada popisa mapa u .md datoteci
+3. izrada OOXML datoteke s uvjetnim prikazom svih mogućih metapodataka koji se mogu javiti u projektu (kao Faza, Etapa i slično)
+Ako određeni metapodatak nije prisutan u YAML datoteci, neće se umetnuti u dokument. OOXML datoteka bi trebala sadržavati strukturu samo priloga 001 - Zaglavni dio,
+sve ostale md datoteke će se umetnuti na mjesto $body$ naredbe.
 
-4. izrada makefile datoteke (ili možda filtera?) koja radi sljedeće:
+4. izrada reference-docx datoteke koja sadržava definicije svih stilova koji se koriste u docx. Treba temeljito definirati sve moguće stilove:
+- tekst na naslovnici
+- tablice u zaglavnom dijelu
+
+
+5. izrada makefile datoteke (ili možda filtera?) koja radi sljedeće:
 - umeće metapodatke mape nakon globalnih metapodataka
 - definira sve .md datoteke (metapodaci, poglavlja, popis mapa) koje se koriste za generiranje docx datoteke
 - redoslijed datoteka mora biti fiksan, zajedno s definiranim relativnim putanjama
